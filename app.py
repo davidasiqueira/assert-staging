@@ -18,6 +18,3 @@ def greet():
     return render_template("great.html", name=name)
 
 
-if __name__== 'main':
-    port =i (parameter) host: str | None
-    app.run(host='0.0.0.0', port=port)
