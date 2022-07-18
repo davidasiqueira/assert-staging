@@ -23,7 +23,7 @@ def greet():
 
 @app.route("/api/formulario_candidato", methods=["POST"])
 def formulario_candidato():
-
+    #api de teste
     body = request.get_json()
     print(body)
     return "200"
