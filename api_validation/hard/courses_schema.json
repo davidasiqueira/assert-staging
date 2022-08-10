@@ -1,0 +1,39 @@
+{
+    "type" : "array",
+    "items": {
+        
+        "type" : "object",
+        "properties" : {
+          "formation": {
+            "type" : "string",
+            "minLength" : 1,
+            "maxLength" : 300
+          },
+          
+          "institution": {
+            "type" : "string",
+            "minLength" : 1,
+            "maxLength" : 150
+
+          },
+          "entry_date": {
+            "format" : "date"
+
+          },
+          "departure_date": {
+            "format" : "date"
+
+
+          }
+        
+        },
+        "required" : [
+            "formation",
+            "institution",
+            "entry_date"         
+        ],
+        "additionalProperties": false 
+    },
+    "minItems": 1,
+    "maxItems": 4
+}

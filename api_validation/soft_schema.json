@@ -1,0 +1,32 @@
+{
+    "type" : "object",
+    "properties" : {
+        "soft_a" : {
+            "type" : "integer",
+            "minimum" : 0,
+            "maximum" : 40
+
+        },
+        "soft_b" : {
+            "type" : "integer",
+            "minimum" : 0,
+            "maximum" : 40
+
+        },
+        "soft_c" : {
+            "type" : "integer",
+            "minimum" : 0,
+            "maximum" : 40
+
+        },
+        "soft_d" : {
+            "type" : "integer",
+            "minimum" : 0,
+            "maximum" : 40
+
+        }
+
+    },
+    "required" : ["soft_a", "soft_b", "soft_c", "soft_d"],
+    "additionalProperties": false 
+}

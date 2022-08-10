@@ -1,0 +1,33 @@
+{
+    "type": "Array",
+    "items": {
+        "type": "object",
+        "properties": {
+            "company_name": {
+                "type": "string",
+                "maxLength": 100,
+                "minLength": 1
+            },
+            "admission_date": {
+                "format": "date"
+            },
+            "departure_date": {
+                "format": "date"
+            },
+            "description": {
+                "type": "string",
+                "maxLength": 500,
+                "minLength": 1
+            }
+        },
+        "required": [
+            "company_name",
+            "admission_date",
+            "departure_date",
+            "description"
+        ],
+        "additionalProperties": false
+    },
+    "minItems": 1,
+    "maxItems": 4
+}

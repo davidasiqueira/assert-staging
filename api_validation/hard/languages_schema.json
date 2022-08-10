@@ -1,0 +1,26 @@
+{
+    "type" : "array",
+    "items": {
+        
+        "type" : "object",
+        "properties" : {
+            "language_name" : {
+                "type" : "string",
+                "maxLength" : 50,
+                "minLength" : 1
+            },
+            "level": {
+                "type" : "integer",
+                "maxLength" : 6,
+                "minLength" : 1
+            }
+        },
+        "required" : [
+            "language_name",
+            "level"
+        ],
+        "additionalProperties": false 
+    },
+    "minItems": 1,
+    "maxItems": 4
+}
