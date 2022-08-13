@@ -44,6 +44,11 @@
                 "type": "string",
                 "minLength": 1,
                 "maxLength": 300
+            },
+            "user_description": {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 500
             }
         },
         "required": [
@@ -52,7 +57,8 @@
             "phone_number",
             "birth_date",
             "genre",
-            "cep"  
+            "cep",
+            "user_description"  
         ],
         "additionalProperties": false        
 }    

@@ -1,8 +1,6 @@
 
 from flask import Flask, render_template, request
-
-
-
+from api_validation import validate
 
 app = Flask(__name__)
 
@@ -23,7 +21,8 @@ def greet():
 def formulario_candidato():
     #api de teste
     body = request.get_json()
-    print(body)
-    return "200"
+    
+    return validate.user(body)
+
 
     

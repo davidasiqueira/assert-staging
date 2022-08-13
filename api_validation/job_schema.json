@@ -1,5 +1,5 @@
 {
-    "type": "Array",
+    "type": "array",
     "items": {
         "type": "object",
         "properties": {
