@@ -23,20 +23,20 @@ def user(json):
             schema = load(f)
             validate(json["user_hard"]["languages"], schema)
     except:
-        return "Erro ao validar o schema{}".format(schema)
+        return "Erro ao validar o schema{}".format(str(schema))
 
     try: 
         with open ("api_validation/job_schema.json") as f:
             schema = load(f)
             validate(json["user_hard"]["jobs"], schema)
     except:
-        return "Erro ao validar o schema{}".format(schema)
+        return "Erro ao validar o schema{}".format(str(schema))
 
     try: 
         with open ("api_validation/courses_schema.json") as f:
             schema = load(f)
             validate(json["user_hard"]["courses"], schema)
     except:
-        return "Erro ao validar o schema{}".format(schema)
+        return "Erro ao validar o schema{}".format(str(schema))
 
-    return "Valido"    
+    return True    
