@@ -9,7 +9,8 @@ def user(json):
             schema = load(f)
             print(validate(json["user_data"], schema))
     except:
-        return "Erro ao validar o schema{}".format(schema)
+        erro = "Erro ao validar o schema{}".format(schema)
+        return erro
 
     try: 
         with open ("api_validation/soft_schema.json") as f:
