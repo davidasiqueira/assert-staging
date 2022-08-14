@@ -1,6 +1,7 @@
 
 from flask import Flask, render_template, request
 from api_validation import validate
+from db import manipulate_data
 
 app = Flask(__name__)
 
@@ -21,8 +22,16 @@ def greet():
 def formulario_candidato():
     #api de teste
     body = request.get_json()
-    
-    return validate.user(body)
+    isvalid = validate.user(body)
 
+    if isvalid:
+        
+        try:
+            manipulate_data(body)
+            return "Salvo com sucesso"
+        except:
+            return "Erro ao salvar"        
+    
+    return isvalid
 
     
