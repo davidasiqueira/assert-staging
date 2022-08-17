@@ -20,6 +20,7 @@ def greet():
 
 @app.route("/api/formulario_candidato", methods=["POST"])
 def formulario_candidato():
+    erro = ''
     #api de teste
     body = request.get_json()
     isvalid = validate.user(body)
@@ -27,10 +28,10 @@ def formulario_candidato():
     if isvalid:
         
         try:
-            manipulate_data(body)
+            erro = manipulate_data(body)
             return "Salvo com sucesso"
         except:
-            return "Erro ao salvar"        
+            return erro       
     
     return isvalid
 

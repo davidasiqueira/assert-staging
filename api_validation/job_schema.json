@@ -23,7 +23,6 @@
         "required": [
             "company_name",
             "admission_date",
-            "departure_date",
             "description"
         ],
         "additionalProperties": false
