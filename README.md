@@ -26,98 +26,51 @@ URL: /api/formulario_candidato
 Body:
 JSON
 
-[{
-  "user_data": {
-     "nome": "",
-     "email": "",
-     "phone_number": "",
-     "birth_date": "",
-     "sexo": "",
-     "cpf": "",
-     "cep": "",
-     "linkedin_link": "",
-     "user_description": ""
-  },
-  "user_soft": {
-      "a": "",
-      "b": "",
-      "c": "",
-      "d": ""
-  },
-  "user_hard": {
-      "jobs": {
-          "job1": {
-              "company_name": "",
-              "admission_date": "",
-              "departure_date": "",
-              "description": ""
+{
+    "user_data": {
+        "name": "David",
+        "email": "teste@teste.com.br",
+        "phone_number": "21988887777",
+        "birth_date": "01/04/2001",
+        "genre": "Masculino",
+        "cep": "12345678",
+        "linkedin_link": "www.linkdeteste.com.br",
+        "instagram_link": "www.linkdeteste.com.br",
+        "facebook_link": "www.linkdeteste.com.br",
+        "user_description": "poderia colocar um pouco de lorem ipsum aqui, mas achei mais fácil fazer isso, já é o suficiente para testar."
+    },
+    "user_soft": {
+        "soft_a": 1,
+        "soft_b": 2,
+        "soft_c": 3,
+        "soft_d": 4
+    },
+    "user_hard": {
+        "jobs": [
+            {
+                "company_name": "Alterdata",
+                "admission_date": "01/02/2020",
+                "departure_date": "",
+                "description": "QA"
+            }
+        ],
+        "courses": [
+            {
+                "formation": "Análise e desenvolvimento de sistemas",
+                "institution": "Estácio",
+                "entry_date": "01/04/2018",
+                "departure_date": "01/04/2022"
+            }
+        ],
+        "languages": [
+            {
+                "language_name": "english",
+                "level": 5
+            }
+            
+        ]
+    }
+}
 
-          },
-          "job2": {
-              "company_name": "",
-              "admission_date": "",
-              "departure_date": "",
-              "description": ""
-
-          },
-          "job3": {
-              "company_name": "",
-              "admission_date": "",
-              "departure_date": "",
-              "description": ""
-
-          },
-          "job4": {
-              "company_name": "",
-              "admission_date": "",
-              "departure_date": "",
-              "description": ""
-
-          }
-      },
-      "courses": {
-          "course1":{
-              "formation": "",
-              "institution": "",
-              "entry_date": "",
-              "departure_date": ""
-             },
-          "course2":{
-              "formation": "",
-              "institution": "",
-              "entry_date": "",
-              "departure_date": ""
-             },
-          "course3":{
-              "formation": "",
-              "institution": "",
-              "entry_date": "",
-              "departure_date": ""
-             },
-          "course4":{
-              "formation": "",
-              "institution": "",
-              "entry_date": "",
-              "departure_date": ""
-             }         
-      },
-      "languages": {
-          "language1": {
-              "language_name": "",
-              "level": ""
-          },
-          "language2": {
-              "language_name": "",
-              "level": ""
-          },
-          "language3": {
-              "language_name": "",
-              "level": ""
-          }
-      }
-  }   
- }
-   
- ]
 
 
